@@ -21,9 +21,8 @@ get_week_day()
 	mysql_format(mysql_connect_id, fmt_date, 64, "SELECT WEEKDAY(\"%02d-%02d-%d\")", year, month, day);
 	
 	mysql_result = mysql_query(mysql_connect_id, fmt_date);
-	new rows = cache_num_rows();
-
-	if(rows)
+	
+	if(cache_num_rows())
 		cache_get_value_index_int(0, 0, day_id);
 
 	if(cache_is_valid(mysql_result)) 
