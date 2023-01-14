@@ -36,7 +36,7 @@ get_week_day()
 
 How to use:
 
-```C++
+```Pawn
     
 static const days_name[7][22] = {"monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"};
 
