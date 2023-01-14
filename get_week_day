@@ -20,7 +20,7 @@ stock get_week_day()
 		cache_get_value_index_int(0, 0, dayid);
 
 	if(cache_is_valid(result)) 
-    cache_delete(result);
+    	cache_delete(result);
     
   	return dayid;
 }
