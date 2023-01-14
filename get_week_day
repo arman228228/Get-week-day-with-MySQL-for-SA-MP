@@ -1,3 +1,4 @@
+<code>
 stock get_week_day()
 {
 	new dayid,
@@ -24,3 +25,4 @@ stock get_week_day()
     
   	return dayid;
 }
+</code>
