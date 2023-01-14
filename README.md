@@ -10,7 +10,7 @@ get_week_day()
 	new day_id,
     	Cache: mysql_result,
 		year, month, day,
-		fmt_date[64];
+		fmt_date[36];
 		
 	getdate(year, month, day);
 	
