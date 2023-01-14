@@ -1,5 +1,5 @@
 # Get week day with MySQL
-## Find out the day of the week using mysql
+##№ Find out the day of the week using mysql
 
 How to use?
 
