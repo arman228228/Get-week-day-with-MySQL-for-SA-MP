@@ -3,7 +3,7 @@
 
 Function:
 
-```C++
+```Pawn
 
 get_week_day()
 {
