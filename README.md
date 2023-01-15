@@ -56,8 +56,7 @@ get_week_day()
 	if(cache_num_rows())
     	       day_id = cache_get_row_int(0, 0, mysql_connect_id);
 
-	if(cache_is_valid(mysql_result)) 
-    	cache_delete(mysql_result);
+	cache_delete(mysql_result);
     
   	return day_id;
 }
