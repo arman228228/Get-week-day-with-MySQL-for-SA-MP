@@ -69,7 +69,7 @@ How to use:
 
 ```Pawn
     
-static const days_name[7][22] = {
+static const days_name[7][12] = {
 	"monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"
 };
 
