@@ -31,6 +31,8 @@ get_week_day()
   	return day_id;
 }
 
+```
+
 Function (MySQL R39 Version):
 
 ```Pawn
