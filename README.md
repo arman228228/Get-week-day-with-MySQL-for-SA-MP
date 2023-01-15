@@ -8,9 +8,9 @@ Function (MySQL R41 Version):
 get_week_day()
 {
 	new day_id,
-    	Cache: mysql_result,
-		year, month, day,
-		fmt_date[36];
+    	       Cache: mysql_result,
+	       year, month, day,
+	       fmt_date[35];
 		
 	getdate(year, month, day);
 	
@@ -18,15 +18,14 @@ get_week_day()
   	mysql_connect_id - instead, use your database connection variable
  	*/
   
-	mysql_format(mysql_connect_id, fmt_date, 64, "SELECT WEEKDAY(\"%02d-%02d-%d\")", year, month, day);
+	format(fmt_date, sizeof(fmt_date), "SELECT WEEKDAY(\"%02d-%02d-%d\")", year, month, day);
 	
 	mysql_result = mysql_query(mysql_connect_id, fmt_date);
 	
 	if(cache_num_rows())
 		cache_get_value_index_int(0, 0, day_id);
 
-	if(cache_is_valid(mysql_result)) 
-    	cache_delete(mysql_result);
+	cache_delete(mysql_result);
     
   	return day_id;
 }
@@ -42,7 +41,7 @@ get_week_day()
 	new day_id,
     	Cache: mysql_result,
 		year, month, day,
-		fmt_date[36];
+		fmt_date[35];
 		
 	getdate(year, month, day);
 	
@@ -50,7 +49,7 @@ get_week_day()
   	mysql_connect_id - instead, use your database connection variable
  	*/
   
-	mysql_format(mysql_connect_id, fmt_date, 64, "SELECT WEEKDAY(\"%02d-%02d-%d\")", year, month, day);
+	format(fmt_date, sizeof(fmt_date), "SELECT WEEKDAY(\"%02d-%02d-%d\")", year, month, day);
 	
 	mysql_result = mysql_query(mysql_connect_id, fmt_date);
 	
